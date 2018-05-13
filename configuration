@@ -2,7 +2,7 @@
 #This is a comment. 
 #See readme file for instructions for field inputs
 ######################################################################################################
-#
+##
 #Choose a name for results directory, and select mode: semiMajorAxisEvolution, singleEpochPopulation or multiEpochPopulation
 #
 Mode = semiMajorAxisEvolution
