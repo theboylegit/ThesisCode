@@ -1,0 +1,48 @@
+#################################### SIMSPLASH Code Configuration ###################################
+#
+name_your_experiment = Insert_a_name_here
+Mode = Orbital
+#
+##### This is a comment
+#
+######## Orbital Mode ########
+star_models = MIST_R
+SMA_type = range_sma
+star_mass = 2.1
+planet_mass = 2.3
+star_metallicity = 0.014
+initial_SMA = 3.0
+SMA_range = 2.9,3.5,0.05
+runge_kutta = rk45_dopri
+make_plot = yes
+make_HR = yes
+#
+#
+##### Create new MESA model #####
+name_your_mesa_dir = testing
+mixing_length_alpha = 1.6
+Reimers_RGB = 0.5
+Blocker_AGB = 0.1
+Rotation = 0.04
+#
+######## Single-epoch population ######
+planet_sample = exoplanets_org
+##If mean metallicity evolve all planets according to the mean of the sample
+metallicity_handle = none
+####Mean metallicity of stellar population for gaidos and mann
+mean_metallicity = 0.014
+Binary_fraction = 0.5
+planet_mass_cutoff_Mj = 1.0, 16.0
+population_mass = 7.5e10
+population_age = 8.5e9
+back_of_envelope = no
+#
+######### Multi-epoch population ######
+#standard or reduced
+mass_loss_prescription = standard
+binary_f_RGB = 0.28
+binary_f_AGB = 0.32
+progenitor_mass_low = 0.8
+RGB_pl_prevents = yes
+IMF = kroupa_01
+PN_avg_visibility = 26000
